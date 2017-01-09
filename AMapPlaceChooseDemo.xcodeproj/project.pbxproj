@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A2D0F861E2373090036ACED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D0F851E2373090036ACED /* AppDelegate.swift */; };
+		6A2D0F881E2373090036ACED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D0F871E2373090036ACED /* ViewController.swift */; };
+		6A2D0F8B1E2373090036ACED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A2D0F891E2373090036ACED /* Main.storyboard */; };
+		6A2D0F8D1E2373090036ACED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A2D0F8C1E2373090036ACED /* Assets.xcassets */; };
+		6A2D0F901E2373090036ACED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A2D0F8E1E2373090036ACED /* LaunchScreen.storyboard */; };
+		6A2D0F9C1E2373310036ACED /* AMapPlaceChooseDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D0F9B1E2373310036ACED /* AMapPlaceChooseDemoUITests.m */; };
 		6BC004EB08EC8BB63DC19941 /* libPods-AMapPlaceChooseDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E33B171E8F010C28A5E670A /* libPods-AMapPlaceChooseDemo.a */; };
 		74E8D4061BB8F1B800CE4FAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E8D4051BB8F1B800CE4FAA /* main.m */; };
 		74E8D4091BB8F1B800CE4FAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E8D4081BB8F1B800CE4FAA /* AppDelegate.m */; };
@@ -35,7 +41,28 @@
 		74FC34951BC7696200E49666 /* gpssearchbutton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74FC34911BC7696200E49666 /* gpssearchbutton@3x.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6A2D0F9E1E2373310036ACED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74E8D3F91BB8F1B800CE4FAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74E8D4001BB8F1B800CE4FAA;
+			remoteInfo = AMapPlaceChooseDemo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		6A2D0F831E2373090036ACED /* AMapPlaceChooseDemo-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AMapPlaceChooseDemo-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A2D0F851E2373090036ACED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6A2D0F871E2373090036ACED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6A2D0F8A1E2373090036ACED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6A2D0F8C1E2373090036ACED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A2D0F8F1E2373090036ACED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6A2D0F911E2373090036ACED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A2D0F991E2373310036ACED /* AMapPlaceChooseDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMapPlaceChooseDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A2D0F9B1E2373310036ACED /* AMapPlaceChooseDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMapPlaceChooseDemoUITests.m; sourceTree = "<group>"; };
+		6A2D0F9D1E2373310036ACED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A2D0FA31E2374990036ACED /* Swift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		6CDF1CC4D82E19A0CD0FDEAD /* Pods-AMapPlaceChooseDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMapPlaceChooseDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMapPlaceChooseDemo/Pods-AMapPlaceChooseDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		74E8D4011BB8F1B800CE4FAA /* AMapPlaceChooseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMapPlaceChooseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E8D4051BB8F1B800CE4FAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -72,6 +99,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6A2D0F801E2373090036ACED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A2D0F961E2373310036ACED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		74E8D3FE1BB8F1B800CE4FAA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -103,10 +144,35 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6A2D0F841E2373090036ACED /* AMapPlaceChooseDemo-swift */ = {
+			isa = PBXGroup;
+			children = (
+				6A2D0F851E2373090036ACED /* AppDelegate.swift */,
+				6A2D0F871E2373090036ACED /* ViewController.swift */,
+				6A2D0FA31E2374990036ACED /* Swift-Bridging-Header.h */,
+				6A2D0F891E2373090036ACED /* Main.storyboard */,
+				6A2D0F8C1E2373090036ACED /* Assets.xcassets */,
+				6A2D0F8E1E2373090036ACED /* LaunchScreen.storyboard */,
+				6A2D0F911E2373090036ACED /* Info.plist */,
+			);
+			path = "AMapPlaceChooseDemo-swift";
+			sourceTree = "<group>";
+		};
+		6A2D0F9A1E2373310036ACED /* AMapPlaceChooseDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6A2D0F9B1E2373310036ACED /* AMapPlaceChooseDemoUITests.m */,
+				6A2D0F9D1E2373310036ACED /* Info.plist */,
+			);
+			path = AMapPlaceChooseDemoUITests;
+			sourceTree = "<group>";
+		};
 		74E8D3F81BB8F1B800CE4FAA = {
 			isa = PBXGroup;
 			children = (
 				74E8D4031BB8F1B800CE4FAA /* AMapPlaceChooseDemo */,
+				6A2D0F841E2373090036ACED /* AMapPlaceChooseDemo-swift */,
+				6A2D0F9A1E2373310036ACED /* AMapPlaceChooseDemoUITests */,
 				74E8D4021BB8F1B800CE4FAA /* Products */,
 				0B4D196BF9E00AC2F34B658F /* Pods */,
 				CD3AA41D3ACF06EED8E2E9B5 /* Frameworks */,
@@ -117,6 +183,8 @@
 			isa = PBXGroup;
 			children = (
 				74E8D4011BB8F1B800CE4FAA /* AMapPlaceChooseDemo.app */,
+				6A2D0F831E2373090036ACED /* AMapPlaceChooseDemo-swift.app */,
+				6A2D0F991E2373310036ACED /* AMapPlaceChooseDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,6 +244,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6A2D0F821E2373090036ACED /* AMapPlaceChooseDemo-swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A2D0F941E2373090036ACED /* Build configuration list for PBXNativeTarget "AMapPlaceChooseDemo-swift" */;
+			buildPhases = (
+				6A2D0F7F1E2373090036ACED /* Sources */,
+				6A2D0F801E2373090036ACED /* Frameworks */,
+				6A2D0F811E2373090036ACED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AMapPlaceChooseDemo-swift";
+			productName = "AMapPlaceChooseDemo-swift";
+			productReference = 6A2D0F831E2373090036ACED /* AMapPlaceChooseDemo-swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6A2D0F981E2373310036ACED /* AMapPlaceChooseDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A2D0FA01E2373310036ACED /* Build configuration list for PBXNativeTarget "AMapPlaceChooseDemoUITests" */;
+			buildPhases = (
+				6A2D0F951E2373310036ACED /* Sources */,
+				6A2D0F961E2373310036ACED /* Frameworks */,
+				6A2D0F971E2373310036ACED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A2D0F9F1E2373310036ACED /* PBXTargetDependency */,
+			);
+			name = AMapPlaceChooseDemoUITests;
+			productName = AMapPlaceChooseDemoUITests;
+			productReference = 6A2D0F991E2373310036ACED /* AMapPlaceChooseDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		74E8D4001BB8F1B800CE4FAA /* AMapPlaceChooseDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74E8D4181BB8F1B800CE4FAA /* Build configuration list for PBXNativeTarget "AMapPlaceChooseDemo" */;
@@ -202,9 +305,21 @@
 		74E8D3F91BB8F1B800CE4FAA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = FENGSHENG;
 				TargetAttributes = {
+					6A2D0F821E2373090036ACED = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = YMJ372W38W;
+						ProvisioningStyle = Manual;
+					};
+					6A2D0F981E2373310036ACED = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = YMJ372W38W;
+						ProvisioningStyle = Manual;
+						TestTargetID = 74E8D4001BB8F1B800CE4FAA;
+					};
 					74E8D4001BB8F1B800CE4FAA = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = YMJ372W38W;
@@ -226,11 +341,30 @@
 			projectRoot = "";
 			targets = (
 				74E8D4001BB8F1B800CE4FAA /* AMapPlaceChooseDemo */,
+				6A2D0F821E2373090036ACED /* AMapPlaceChooseDemo-swift */,
+				6A2D0F981E2373310036ACED /* AMapPlaceChooseDemoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6A2D0F811E2373090036ACED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A2D0F901E2373090036ACED /* LaunchScreen.storyboard in Resources */,
+				6A2D0F8D1E2373090036ACED /* Assets.xcassets in Resources */,
+				6A2D0F8B1E2373090036ACED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A2D0F971E2373310036ACED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		74E8D3FF1BB8F1B800CE4FAA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -299,6 +433,23 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6A2D0F7F1E2373090036ACED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A2D0F881E2373090036ACED /* ViewController.swift in Sources */,
+				6A2D0F861E2373090036ACED /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A2D0F951E2373310036ACED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A2D0F9C1E2373310036ACED /* AMapPlaceChooseDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		74E8D3FD1BB8F1B800CE4FAA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -312,7 +463,31 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		6A2D0F9F1E2373310036ACED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74E8D4001BB8F1B800CE4FAA /* AMapPlaceChooseDemo */;
+			targetProxy = 6A2D0F9E1E2373310036ACED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		6A2D0F891E2373090036ACED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A2D0F8A1E2373090036ACED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6A2D0F8E1E2373090036ACED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A2D0F8F1E2373090036ACED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		74E8D40D1BB8F1B800CE4FAA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -332,6 +507,92 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6A2D0F921E2373090036ACED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = "AMapPlaceChooseDemo-swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.AMapPlaceChooseDemo-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9b821a78-8ad6-4cf7-b6b0-31b43df04bbe";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(TARGET_NAME)/Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6A2D0F931E2373090036ACED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = "AMapPlaceChooseDemo-swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.AMapPlaceChooseDemo-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a892512d-fe94-4702-b716-0b66880b936d";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatformInhouse;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(TARGET_NAME)/Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6A2D0FA11E2373310036ACED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = AMapPlaceChooseDemoUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.autonavi.AMapPlaceChooseDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9b821a78-8ad6-4cf7-b6b0-31b43df04bbe";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
+				TEST_TARGET_NAME = AMapPlaceChooseDemo;
+			};
+			name = Debug;
+		};
+		6A2D0FA21E2373310036ACED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = AMapPlaceChooseDemoUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.autonavi.AMapPlaceChooseDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9b821a78-8ad6-4cf7-b6b0-31b43df04bbe";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
+				TEST_TARGET_NAME = AMapPlaceChooseDemo;
+			};
+			name = Release;
+		};
 		74E8D4161BB8F1B800CE4FAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -424,7 +685,7 @@
 					"$(PROJECT_DIR)/AMapPlaceChooseDemo",
 				);
 				INFOPLIST_FILE = AMapPlaceChooseDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.autonavi.AMapPlaceChooseDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -446,7 +707,7 @@
 					"$(PROJECT_DIR)/AMapPlaceChooseDemo",
 				);
 				INFOPLIST_FILE = AMapPlaceChooseDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.autonavi.AMapPlaceChooseDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -458,6 +719,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6A2D0F941E2373090036ACED /* Build configuration list for PBXNativeTarget "AMapPlaceChooseDemo-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A2D0F921E2373090036ACED /* Debug */,
+				6A2D0F931E2373090036ACED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6A2D0FA01E2373310036ACED /* Build configuration list for PBXNativeTarget "AMapPlaceChooseDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A2D0FA11E2373310036ACED /* Debug */,
+				6A2D0FA21E2373310036ACED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		74E8D3FC1BB8F1B800CE4FAA /* Build configuration list for PBXProject "AMapPlaceChooseDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

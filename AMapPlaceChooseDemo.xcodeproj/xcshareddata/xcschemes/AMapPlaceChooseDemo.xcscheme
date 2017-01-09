@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6A2D0F981E2373310036ACED"
+               BuildableName = "AMapPlaceChooseDemoUITests.xctest"
+               BlueprintName = "AMapPlaceChooseDemoUITests"
+               ReferencedContainer = "container:AMapPlaceChooseDemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
