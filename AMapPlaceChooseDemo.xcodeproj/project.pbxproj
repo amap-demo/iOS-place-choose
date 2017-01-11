@@ -13,6 +13,13 @@
 		6A2D0F8D1E2373090036ACED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A2D0F8C1E2373090036ACED /* Assets.xcassets */; };
 		6A2D0F901E2373090036ACED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A2D0F8E1E2373090036ACED /* LaunchScreen.storyboard */; };
 		6A2D0F9C1E2373310036ACED /* AMapPlaceChooseDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D0F9B1E2373310036ACED /* AMapPlaceChooseDemoUITests.m */; };
+		6A2D0FA81E24B5520036ACED /* PlaceAroundTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D0FA71E24B5520036ACED /* PlaceAroundTableView.swift */; };
+		6A48AD7A1E250FE100ADE486 /* wateRedBlank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74E8D4361BB90D2A00CE4FAA /* wateRedBlank@2x.png */; };
+		6A48AD7B1E250FE100ADE486 /* wateRedBlank@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74E8D4371BB90D2A00CE4FAA /* wateRedBlank@3x.png */; };
+		6A48AD7C1E250FE100ADE486 /* gpsnormal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74FC348E1BC7696200E49666 /* gpsnormal@2x.png */; };
+		6A48AD7D1E250FE100ADE486 /* gpsnormal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74FC348F1BC7696200E49666 /* gpsnormal@3x.png */; };
+		6A48AD7E1E250FE100ADE486 /* gpssearchbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74FC34901BC7696200E49666 /* gpssearchbutton@2x.png */; };
+		6A48AD7F1E250FE100ADE486 /* gpssearchbutton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74FC34911BC7696200E49666 /* gpssearchbutton@3x.png */; };
 		6BC004EB08EC8BB63DC19941 /* libPods-AMapPlaceChooseDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E33B171E8F010C28A5E670A /* libPods-AMapPlaceChooseDemo.a */; };
 		74E8D4061BB8F1B800CE4FAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E8D4051BB8F1B800CE4FAA /* main.m */; };
 		74E8D4091BB8F1B800CE4FAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E8D4081BB8F1B800CE4FAA /* AppDelegate.m */; };
@@ -39,6 +46,7 @@
 		74FC34931BC7696200E49666 /* gpsnormal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74FC348F1BC7696200E49666 /* gpsnormal@3x.png */; };
 		74FC34941BC7696200E49666 /* gpssearchbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74FC34901BC7696200E49666 /* gpssearchbutton@2x.png */; };
 		74FC34951BC7696200E49666 /* gpssearchbutton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74FC34911BC7696200E49666 /* gpssearchbutton@3x.png */; };
+		DFB1FBDB6390FFED7439DC9E /* libPods-AMapPlaceChooseDemo-swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FB14DD0DAAA0821D1EBB6AC /* libPods-AMapPlaceChooseDemo-swift.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +71,10 @@
 		6A2D0F9B1E2373310036ACED /* AMapPlaceChooseDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMapPlaceChooseDemoUITests.m; sourceTree = "<group>"; };
 		6A2D0F9D1E2373310036ACED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A2D0FA31E2374990036ACED /* Swift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		6A2D0FA71E24B5520036ACED /* PlaceAroundTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceAroundTableView.swift; sourceTree = "<group>"; };
 		6CDF1CC4D82E19A0CD0FDEAD /* Pods-AMapPlaceChooseDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMapPlaceChooseDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMapPlaceChooseDemo/Pods-AMapPlaceChooseDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		6FB14DD0DAAA0821D1EBB6AC /* libPods-AMapPlaceChooseDemo-swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AMapPlaceChooseDemo-swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71B7CFC8D680D65594F44D39 /* Pods-AMapPlaceChooseDemo-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMapPlaceChooseDemo-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMapPlaceChooseDemo-swift/Pods-AMapPlaceChooseDemo-swift.release.xcconfig"; sourceTree = "<group>"; };
 		74E8D4011BB8F1B800CE4FAA /* AMapPlaceChooseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMapPlaceChooseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E8D4051BB8F1B800CE4FAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		74E8D4071BB8F1B800CE4FAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -95,6 +106,7 @@
 		74FC34901BC7696200E49666 /* gpssearchbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gpssearchbutton@2x.png"; sourceTree = "<group>"; };
 		74FC34911BC7696200E49666 /* gpssearchbutton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gpssearchbutton@3x.png"; sourceTree = "<group>"; };
 		7E33B171E8F010C28A5E670A /* libPods-AMapPlaceChooseDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AMapPlaceChooseDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EC209019D1B67A85473C36A /* Pods-AMapPlaceChooseDemo-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMapPlaceChooseDemo-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMapPlaceChooseDemo-swift/Pods-AMapPlaceChooseDemo-swift.debug.xcconfig"; sourceTree = "<group>"; };
 		C48BB59B6AE4B287CF636532 /* Pods-AMapPlaceChooseDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMapPlaceChooseDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMapPlaceChooseDemo/Pods-AMapPlaceChooseDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFB1FBDB6390FFED7439DC9E /* libPods-AMapPlaceChooseDemo-swift.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +153,8 @@
 			children = (
 				6CDF1CC4D82E19A0CD0FDEAD /* Pods-AMapPlaceChooseDemo.debug.xcconfig */,
 				C48BB59B6AE4B287CF636532 /* Pods-AMapPlaceChooseDemo.release.xcconfig */,
+				8EC209019D1B67A85473C36A /* Pods-AMapPlaceChooseDemo-swift.debug.xcconfig */,
+				71B7CFC8D680D65594F44D39 /* Pods-AMapPlaceChooseDemo-swift.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -149,6 +164,7 @@
 			children = (
 				6A2D0F851E2373090036ACED /* AppDelegate.swift */,
 				6A2D0F871E2373090036ACED /* ViewController.swift */,
+				6A2D0FA71E24B5520036ACED /* PlaceAroundTableView.swift */,
 				6A2D0FA31E2374990036ACED /* Swift-Bridging-Header.h */,
 				6A2D0F891E2373090036ACED /* Main.storyboard */,
 				6A2D0F8C1E2373090036ACED /* Assets.xcassets */,
@@ -237,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				7E33B171E8F010C28A5E670A /* libPods-AMapPlaceChooseDemo.a */,
+				6FB14DD0DAAA0821D1EBB6AC /* libPods-AMapPlaceChooseDemo-swift.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -248,9 +265,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A2D0F941E2373090036ACED /* Build configuration list for PBXNativeTarget "AMapPlaceChooseDemo-swift" */;
 			buildPhases = (
+				672A1150C837DCFF5D18CF0F /* [CP] Check Pods Manifest.lock */,
 				6A2D0F7F1E2373090036ACED /* Sources */,
 				6A2D0F801E2373090036ACED /* Frameworks */,
 				6A2D0F811E2373090036ACED /* Resources */,
+				7D6CE3C37A79BE53825786F8 /* [CP] Embed Pods Frameworks */,
+				3266547AC41BCBE44310CC9B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -352,6 +372,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A48AD7A1E250FE100ADE486 /* wateRedBlank@2x.png in Resources */,
+				6A48AD7B1E250FE100ADE486 /* wateRedBlank@3x.png in Resources */,
+				6A48AD7C1E250FE100ADE486 /* gpsnormal@2x.png in Resources */,
+				6A48AD7D1E250FE100ADE486 /* gpsnormal@3x.png in Resources */,
+				6A48AD7E1E250FE100ADE486 /* gpssearchbutton@2x.png in Resources */,
+				6A48AD7F1E250FE100ADE486 /* gpssearchbutton@3x.png in Resources */,
 				6A2D0F901E2373090036ACED /* LaunchScreen.storyboard in Resources */,
 				6A2D0F8D1E2373090036ACED /* Assets.xcassets in Resources */,
 				6A2D0F8B1E2373090036ACED /* Main.storyboard in Resources */,
@@ -400,6 +426,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMapPlaceChooseDemo/Pods-AMapPlaceChooseDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3266547AC41BCBE44310CC9B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMapPlaceChooseDemo-swift/Pods-AMapPlaceChooseDemo-swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4AC36CEEE1602C3803231C3A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -415,6 +456,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMapPlaceChooseDemo/Pods-AMapPlaceChooseDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		672A1150C837DCFF5D18CF0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7D6CE3C37A79BE53825786F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMapPlaceChooseDemo-swift/Pods-AMapPlaceChooseDemo-swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BD7D37FE607E69E5D8603C85 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -427,7 +498,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -438,6 +509,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A2D0F881E2373090036ACED /* ViewController.swift in Sources */,
+				6A2D0FA81E24B5520036ACED /* PlaceAroundTableView.swift in Sources */,
 				6A2D0F861E2373090036ACED /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +581,7 @@
 /* Begin XCBuildConfiguration section */
 		6A2D0F921E2373090036ACED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EC209019D1B67A85473C36A /* Pods-AMapPlaceChooseDemo-swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -519,7 +592,7 @@
 				INFOPLIST_FILE = "AMapPlaceChooseDemo-swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.AMapPlaceChooseDemo-swift";
+				PRODUCT_BUNDLE_IDENTIFIER = com.autonavi.AMapPlaceChooseDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "9b821a78-8ad6-4cf7-b6b0-31b43df04bbe";
 				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
@@ -533,6 +606,7 @@
 		};
 		6A2D0F931E2373090036ACED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71B7CFC8D680D65594F44D39 /* Pods-AMapPlaceChooseDemo-swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -544,7 +618,7 @@
 				INFOPLIST_FILE = "AMapPlaceChooseDemo-swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.AMapPlaceChooseDemo-swift";
+				PRODUCT_BUNDLE_IDENTIFIER = com.autonavi.AMapPlaceChooseDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "a892512d-fe94-4702-b716-0b66880b936d";
 				PROVISIONING_PROFILE_SPECIFIER = openPlatformInhouse;
@@ -726,6 +800,7 @@
 				6A2D0F931E2373090036ACED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A2D0FA01E2373310036ACED /* Build configuration list for PBXNativeTarget "AMapPlaceChooseDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -734,6 +809,7 @@
 				6A2D0FA21E2373310036ACED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74E8D3FC1BB8F1B800CE4FAA /* Build configuration list for PBXProject "AMapPlaceChooseDemo" */ = {
 			isa = XCConfigurationList;

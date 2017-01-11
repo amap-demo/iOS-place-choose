@@ -27,7 +27,7 @@
 
 @property (nonatomic, weak) id<PlaceAroundTableViewDeleagate> delegate;
 
-@property (nonatomic, strong) NSString *currentRedWaterPosition;
+@property (nonatomic, copy) NSString *currentAddress;
 
 - (instancetype)initWithFrame:(CGRect)frame;
 

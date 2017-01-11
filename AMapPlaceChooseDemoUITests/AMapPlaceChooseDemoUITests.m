@@ -50,7 +50,7 @@
     
     sleep(1);
     [app.buttons[@"楼宇"] tap];
-    XCUIElement *more = tablesQuery.buttons[@"更多.."];
+    XCUIElement *more = tablesQuery.buttons[@"更多..."];
     if (!more.exists) {
         [tablesQuery.element swipeUp];
     }

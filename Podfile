@@ -7,3 +7,11 @@ pod 'AMap3DMap'
 pod 'AMapSearch'
 
 end
+
+
+target "AMapPlaceChooseDemo-swift" do
+
+pod 'AMap3DMap'
+pod 'AMapSearch'
+
+end

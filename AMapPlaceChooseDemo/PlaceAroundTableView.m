@@ -8,6 +8,8 @@
 
 #import "PlaceAroundTableView.h"
 
+#define kMoreButtonTitle @"更多..."
+
 @interface PlaceAroundTableView()
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -43,14 +45,13 @@
     else
     {
         [self.searchPoiArray removeAllObjects];
-        [self.moreButton setTitle:@"更多.." forState:UIControlStateNormal];
+        [self.moreButton setTitle:kMoreButtonTitle forState:UIControlStateNormal];
         self.moreButton.enabled = YES;
         self.moreButton.backgroundColor = [UIColor whiteColor];
     }
 
     if (response.pois.count == 0)
     {
-        NSLog(@"没有数据了");
         [self.moreButton setTitle:@"没有数据了.." forState:UIControlStateNormal];
         self.moreButton.enabled = NO;
         self.moreButton.backgroundColor = [[UIColor grayColor] colorWithAlphaComponent:0.4];
@@ -72,7 +73,7 @@
 {
     if (response.regeocode != nil)
     {
-        self.currentRedWaterPosition = response.regeocode.formattedAddress;
+        self.currentAddress = response.regeocode.formattedAddress;
         
         NSIndexPath *reloadIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
         [self.tableView reloadRowsAtIndexPaths:@[reloadIndexPath] withRowAnimation:UITableViewRowAnimationNone];
@@ -123,7 +124,7 @@
     if (indexPath.section == 0)
     {
         cell.textLabel.text = @"[位置]";
-        cell.detailTextLabel.text = self.currentRedWaterPosition;
+        cell.detailTextLabel.text = self.currentAddress;
     }
     else
     {
@@ -192,21 +193,23 @@
 
 - (void)initTableViewFooter
 {
+#define kMoreButtonMargin   20
+    
     UIView *footer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.bounds), 60)];
     
     UIButton *moreBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     moreBtn.frame = footer.bounds;
-    [moreBtn setTitle:@"更多..." forState:UIControlStateNormal];
+    [moreBtn setTitle:kMoreButtonTitle forState:UIControlStateNormal];
     [moreBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [moreBtn setTitleColor:[[UIColor grayColor] colorWithAlphaComponent:0.4] forState:UIControlStateHighlighted];
     moreBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-    moreBtn.contentEdgeInsets = UIEdgeInsetsMake(0, 15, 0, 0);
+    moreBtn.titleEdgeInsets = UIEdgeInsetsMake(0, kMoreButtonMargin, 0, 0);
     [moreBtn addTarget:self action:@selector(actionMoreButtonTapped) forControlEvents:UIControlEventTouchUpInside];
     self.moreButton = moreBtn;
     
     [footer addSubview:moreBtn];
     
-    UIView *upLineView = [[UIView alloc] initWithFrame:CGRectMake(15, 3, CGRectGetWidth(self.bounds)-15, 0.5)];
+    UIView *upLineView = [[UIView alloc] initWithFrame:CGRectMake(kMoreButtonMargin, 3, CGRectGetWidth(self.bounds) - kMoreButtonMargin, 0.5)];
     upLineView.backgroundColor = [[UIColor grayColor] colorWithAlphaComponent:0.4];
     [footer addSubview:upLineView];
     

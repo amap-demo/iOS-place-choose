@@ -21,7 +21,7 @@
 @property (nonatomic, strong) AMapSearchAPI        *search;
 
 @property (nonatomic, strong) PlaceAroundTableView *tableview;
-@property (nonatomic, strong) UIImageView          *redWaterView;
+@property (nonatomic, strong) UIImageView          *centerAnnotationView;
 @property (nonatomic, assign) BOOL                  isMapViewRegionChangedFromTableView;
 
 @property (nonatomic, assign) BOOL                  isLocated;
@@ -43,7 +43,7 @@
 #pragma mark - Utility
 
 /* 根据中心点坐标来搜周边的POI. */
-- (void)searchPoiByCenterCoordinate:(CLLocationCoordinate2D )coord
+- (void)searchPoiWithCenterCoordinate:(CLLocationCoordinate2D )coord
 {
     AMapPOIAroundSearchRequest*request = [[AMapPOIAroundSearchRequest alloc] init];
     
@@ -73,7 +73,7 @@
 {
     if (!self.isMapViewRegionChangedFromTableView && self.mapView.userTrackingMode == MAUserTrackingModeNone)
     {
-        [self actionSearchAround];
+        [self actionSearchAroundAt:self.mapView.centerCoordinate];
     }
     self.isMapViewRegionChangedFromTableView = NO;
 }
@@ -111,7 +111,7 @@
 - (void)didLoadMorePOIButtonTapped
 {
     self.searchPage++;
-    [self searchPoiByCenterCoordinate:self.mapView.centerCoordinate];
+    [self searchPoiWithCenterCoordinate:self.mapView.centerCoordinate];
 }
 
 #pragma mark - userLocation
@@ -130,12 +130,10 @@
     if (!self.isLocated)
     {
         self.isLocated = YES;
-        
+        self.mapView.userTrackingMode = MAUserTrackingModeFollow;
         [self.mapView setCenterCoordinate:CLLocationCoordinate2DMake(userLocation.location.coordinate.latitude, userLocation.location.coordinate.longitude)];
         
-        [self actionSearchAround];
-        
-        self.mapView.userTrackingMode = MAUserTrackingModeFollow;
+        [self actionSearchAroundAt:userLocation.location.coordinate];
     }
 }
 
@@ -158,13 +156,13 @@
 
 #pragma mark - Handle Action
 
-- (void)actionSearchAround
+- (void)actionSearchAroundAt:(CLLocationCoordinate2D)coordinate
 {
-    [self searchReGeocodeWithCoordinate:self.mapView.centerCoordinate];
-    [self searchPoiByCenterCoordinate:self.mapView.centerCoordinate];
+    [self searchReGeocodeWithCoordinate:coordinate];
+    [self searchPoiWithCenterCoordinate:coordinate];
     
     self.searchPage = 1;
-    [self redWaterAnimimate];
+    [self centerAnnotationAnimimate];
 }
 
 - (void)actionLocation
@@ -189,7 +187,7 @@
 - (void)actionTypeChanged:(UISegmentedControl *)sender
 {
     self.currentType = self.searchTypes[sender.selectedSegmentIndex];
-    [self actionSearchAround];
+    [self actionSearchAroundAt:self.mapView.centerCoordinate];
 }
 
 #pragma mark - Initialization
@@ -198,12 +196,6 @@
 {
     self.mapView = [[MAMapView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), self.view.bounds.size.height/2)];
     self.mapView.delegate = self;
-    self.mapView.showsCompass = NO;
-    self.mapView.showsScale = NO;
-    self.mapView.showsIndoorMap = NO;
-    self.mapView.rotateCameraEnabled = NO;
-    self.mapView.zoomLevel = 17;
-    self.mapView.showsUserLocation = YES;
     [self.view addSubview:self.mapView];
     
     self.isLocated = NO;
@@ -224,16 +216,12 @@
     [self.view addSubview:self.tableview];
 }
 
-- (void)initRedWaterView
+- (void)initCenterView
 {
-    UIImage *image = [UIImage imageNamed:@"wateRedBlank"];
-    self.redWaterView = [[UIImageView alloc] initWithImage:image];
+    self.centerAnnotationView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"wateRedBlank"]];
+    self.centerAnnotationView.center = CGPointMake(self.mapView.center.x, self.mapView.center.y - CGRectGetHeight(self.centerAnnotationView.bounds) / 2);
     
-    self.redWaterView.frame = CGRectMake(self.view.bounds.size.width/2-image.size.width/2, self.mapView.bounds.size.height/2-image.size.height, image.size.width, image.size.height);
-    
-    self.redWaterView.center = CGPointMake(CGRectGetWidth(self.view.bounds) / 2, CGRectGetHeight(self.mapView.bounds) / 2 - CGRectGetHeight(self.redWaterView.bounds) / 2);
-    
-    [self.view addSubview:self.redWaterView];
+    [self.mapView addSubview:self.centerAnnotationView];
 }
 
 - (void)initLocationButton
@@ -270,24 +258,24 @@
 }
 
 /* 移动窗口弹一下的动画 */
-- (void)redWaterAnimimate
+- (void)centerAnnotationAnimimate
 {
     [UIView animateWithDuration:0.5
                           delay:0
                         options:UIViewAnimationOptionCurveEaseOut
                      animations:^{
-                         CGPoint center = self.redWaterView.center;
+                         CGPoint center = self.centerAnnotationView.center;
                          center.y -= 20;
-                         [self.redWaterView setCenter:center];}
+                         [self.centerAnnotationView setCenter:center];}
                      completion:nil];
     
     [UIView animateWithDuration:0.45
                           delay:0
                         options:UIViewAnimationOptionCurveEaseIn
                      animations:^{
-                         CGPoint center = self.redWaterView.center;
+                         CGPoint center = self.centerAnnotationView.center;
                          center.y += 20;
-                         [self.redWaterView setCenter:center];}
+                         [self.centerAnnotationView setCenter:center];}
                      completion:nil];
 }
 
@@ -304,10 +292,18 @@
     [self initSearch];
     [self initMapView];
     
-    [self initRedWaterView];
-    [self initLocationButton];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
     
+    [self initCenterView];
+    [self initLocationButton];
     [self initSearchTypeView];
+    
+    self.mapView.zoomLevel = 17;
+    self.mapView.showsUserLocation = YES;
 }
 
 @end
