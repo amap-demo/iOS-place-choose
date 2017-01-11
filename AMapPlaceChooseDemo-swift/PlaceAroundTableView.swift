@@ -87,6 +87,7 @@ class PlaceAroundTableView: UIView, UITableViewDataSource, UITableViewDelegate, 
     func aMapSearchRequest(_ request: Any!, didFailWithError error: Error!) {
         print("error :\(error)")
     }
+    
     /* POI 搜索回调. */
     func onPOISearchDone(_ request: AMapPOISearchBaseRequest!, response: AMapPOISearchResponse!) {
         
@@ -117,8 +118,11 @@ class PlaceAroundTableView: UIView, UITableViewDataSource, UITableViewDelegate, 
     }
     
     func onReGeocodeSearchDone(_ request: AMapReGeocodeSearchRequest!, response: AMapReGeocodeSearchResponse!) {
-        self.currentAddress = response.regeocode.formattedAddress;
-        self.tableView.reloadRows(at: [IndexPath(row: 0, section: 0)], with: UITableViewRowAnimation.none)
+        
+        if response.regeocode != nil {
+            self.currentAddress = response.regeocode.formattedAddress;
+            self.tableView.reloadRows(at: [IndexPath(row: 0, section: 0)], with: UITableViewRowAnimation.none)
+        }
     }
     
     //MARK:- TableViewDelegate

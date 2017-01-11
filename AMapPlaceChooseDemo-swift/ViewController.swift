@@ -202,6 +202,15 @@ class ViewController: UIViewController, MAMapViewDelegate, PlaceAroundTableViewD
     
     //MARK: - MAMapViewDelegate
     
+    func mapView(_ mapView: MAMapView!, didChange mode: MAUserTrackingMode, animated: Bool) {
+        if mode == .none {
+            self.locationBtn.setImage(self.imageNotLocate, for: .normal)
+        }
+        else {
+            self.locationBtn.setImage(self.imageLocated, for: .normal)
+        }
+    }
+    
     func mapView(_ mapView: MAMapView!, didUpdate userLocation: MAUserLocation!, updatingLocation: Bool) {
         if !updatingLocation {
             return
@@ -218,40 +227,11 @@ class ViewController: UIViewController, MAMapViewDelegate, PlaceAroundTableViewD
         }
     }
     
-    func mapView(_ mapView: MAMapView!, didChange mode: MAUserTrackingMode, animated: Bool) {
-        if mode == .none {
-            self.locationBtn.setImage(self.imageNotLocate, for: .normal)
-        }
-        else {
-            self.locationBtn.setImage(self.imageLocated, for: .normal)
-        }
-    }
-    
     func mapView(_ mapView: MAMapView!, regionDidChangeAnimated animated: Bool) {
         if !self.isMapViewRegionChangedFromTableView && self.mapView.userTrackingMode == .none {
             self.actionSearchAround(at: self.mapView.centerCoordinate)
         }
         self.isMapViewRegionChangedFromTableView = false
-    }
-    
-    func mapView(_ mapView: MAMapView!, viewFor annotation: MAAnnotation!) -> MAAnnotationView! {
-        
-        //            if annotation.isKind(of: MAPointAnnotation.self) || annotation.isKind(of: POIAnnotation.self) {
-        //                let pointReuseIndetifier = "tipReuseIndetifier"
-        //                var annotationView: MAPinAnnotationView? = mapView.dequeueReusableAnnotationView(withIdentifier: pointReuseIndetifier) as! MAPinAnnotationView?
-        //
-        //                if annotationView == nil {
-        //                    annotationView = MAPinAnnotationView(annotation: annotation, reuseIdentifier: pointReuseIndetifier)
-        //                }
-        //
-        //                annotationView!.canShowCallout = true
-        //                annotationView!.isDraggable = false
-        //                annotationView!.rightCalloutAccessoryView = UIButton(type: UIButtonType.detailDisclosure)
-        //
-        //                return annotationView!
-        //            }
-        
-        return nil
     }
 }
 

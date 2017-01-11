@@ -103,5 +103,64 @@
 
 `Swift`
 ```
-敬请期待
+func mapView(_ mapView: MAMapView!, didUpdate userLocation: MAUserLocation!, updatingLocation: Bool) {
+    if !updatingLocation {
+        return
+    }
+    if userLocation.location.horizontalAccuracy < 0 {
+        return
+    }
+    // only the first locate used.
+    if !self.isLocated {
+        self.isLocated = true
+        self.mapView.userTrackingMode = .follow
+        self.mapView.centerCoordinate = userLocation.location.coordinate
+        self.actionSearchAround(at: userLocation.location.coordinate)
+    }
+}
+
+func mapView(_ mapView: MAMapView!, regionDidChangeAnimated animated: Bool) {
+    if !self.isMapViewRegionChangedFromTableView && self.mapView.userTrackingMode == .none {
+        self.actionSearchAround(at: self.mapView.centerCoordinate)
+    }
+    self.isMapViewRegionChangedFromTableView = false
+}
+
+/* PlaceAroundTableView中实现搜索结果回调delegate */
+func onPOISearchDone(_ request: AMapPOISearchBaseRequest!, response: AMapPOISearchResponse!) {
+    
+    if isFromMoreButton {
+        isFromMoreButton = false
+    }
+    else {
+        self.searchPoiArray.removeAll()
+        self.moreButton.setTitle(kMoreButtonTitle, for: UIControlState.normal)
+        self.moreButton.isEnabled = true
+        self.moreButton.backgroundColor = UIColor.white
+    }
+    
+    if response.count == 0 {
+        self.moreButton.setTitle("没有数据了...", for: UIControlState.normal)
+        self.moreButton.isEnabled = false
+        self.moreButton.backgroundColor = UIColor.gray
+        self.selectedIndexPath = nil
+        
+        self.tableView.reloadData()
+
+        return
+    }
+    
+    self.searchPoiArray.append(contentsOf: response.pois)
+    self.selectedIndexPath = nil
+    self.tableView.reloadData()
+}
+
+func onReGeocodeSearchDone(_ request: AMapReGeocodeSearchRequest!, response: AMapReGeocodeSearchResponse!) {
+    
+    if response.regeocode != nil {
+        self.currentAddress = response.regeocode.formattedAddress;
+        self.tableView.reloadRows(at: [IndexPath(row: 0, section: 0)], with: UITableViewRowAnimation.none)
+    }
+}
+
 ```
