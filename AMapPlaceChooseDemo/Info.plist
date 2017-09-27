@@ -27,8 +27,12 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>请求定位权限说明，展示给用户的文案，需要您自行填写相关内容</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>need location</string>
+	<string>请求定位权限说明，展示给用户的文案，需要您自行填写相关内容</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>请求定位权限说明，展示给用户的文案，需要您自行填写相关内容</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
