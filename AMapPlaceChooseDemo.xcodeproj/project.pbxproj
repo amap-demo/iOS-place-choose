@@ -269,7 +269,6 @@
 				6A2D0F7F1E2373090036ACED /* Sources */,
 				6A2D0F801E2373090036ACED /* Frameworks */,
 				6A2D0F811E2373090036ACED /* Resources */,
-				7D6CE3C37A79BE53825786F8 /* [CP] Embed Pods Frameworks */,
 				3266547AC41BCBE44310CC9B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -307,7 +306,6 @@
 				74E8D3FD1BB8F1B800CE4FAA /* Sources */,
 				74E8D3FE1BB8F1B800CE4FAA /* Frameworks */,
 				74E8D3FF1BB8F1B800CE4FAA /* Resources */,
-				4AC36CEEE1602C3803231C3A /* [CP] Embed Pods Frameworks */,
 				2009B7887ED7C17EC122CB26 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -417,16 +415,16 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-AMapPlaceChooseDemo/Pods-AMapPlaceChooseDemo-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-AMapPlaceChooseDemo/Pods-AMapPlaceChooseDemo-resources.sh",
 				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMapPlaceChooseDemo/Pods-AMapPlaceChooseDemo-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AMapPlaceChooseDemo/Pods-AMapPlaceChooseDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3266547AC41BCBE44310CC9B /* [CP] Copy Pods Resources */ = {
@@ -435,31 +433,16 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-AMapPlaceChooseDemo-swift/Pods-AMapPlaceChooseDemo-swift-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-AMapPlaceChooseDemo-swift/Pods-AMapPlaceChooseDemo-swift-resources.sh",
 				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMapPlaceChooseDemo-swift/Pods-AMapPlaceChooseDemo-swift-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4AC36CEEE1602C3803231C3A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMapPlaceChooseDemo/Pods-AMapPlaceChooseDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AMapPlaceChooseDemo-swift/Pods-AMapPlaceChooseDemo-swift-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		672A1150C837DCFF5D18CF0F /* [CP] Check Pods Manifest.lock */ = {
@@ -478,21 +461,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7D6CE3C37A79BE53825786F8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMapPlaceChooseDemo-swift/Pods-AMapPlaceChooseDemo-swift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BD7D37FE607E69E5D8603C85 /* [CP] Check Pods Manifest.lock */ = {
