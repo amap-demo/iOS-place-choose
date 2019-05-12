@@ -12,7 +12,7 @@
 | -----|:-----:|:-----:|:-----:|
 | AMapSearchAPI	| - (void)AMapReGoecodeSearch:(AMapReGeocodeSearchRequest *)request; | 逆地址编码查询接口 | v4.0.0 |
 | AMapSearchAPI	| - (void)AMapPOIAroundSearch:(AMapPOIAroundSearchRequest *)request; | POI 周边查询接口 | v4.0.0 |
-| PlaceAroundTableView	| --- | 继承自UIView，实现了显示逆地理以及POI周边搜索结果，并相应事件。 | --- |
+| PlaceAroundTableView	| --- | 继承自UIView，实现了显示逆地理以及POI周边搜索结果，并响应事件。 | --- |
 
 
 ## 核心难点 ##
