@@ -27,18 +27,6 @@
 		74E8D40F1BB8F1B800CE4FAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74E8D40D1BB8F1B800CE4FAA /* Main.storyboard */; };
 		74E8D4111BB8F1B800CE4FAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74E8D4101BB8F1B800CE4FAA /* Assets.xcassets */; };
 		74E8D4141BB8F1B800CE4FAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74E8D4121BB8F1B800CE4FAA /* LaunchScreen.storyboard */; };
-		74E8D41D1BB8F1D100CE4FAA /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E8D41B1BB8F1D100CE4FAA /* MAMapKit.framework */; };
-		74E8D41E1BB8F1D100CE4FAA /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E8D41C1BB8F1D100CE4FAA /* AMapSearchKit.framework */; };
-		74E8D4201BB8F1F100CE4FAA /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 74E8D41F1BB8F1F100CE4FAA /* AMap.bundle */; };
-		74E8D4221BB8F24700CE4FAA /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E8D4211BB8F24700CE4FAA /* libstdc++.6.0.9.tbd */; };
-		74E8D4241BB8F24E00CE4FAA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E8D4231BB8F24E00CE4FAA /* libz.tbd */; };
-		74E8D4261BB8F25B00CE4FAA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E8D4251BB8F25B00CE4FAA /* QuartzCore.framework */; };
-		74E8D4281BB8F26300CE4FAA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E8D4271BB8F26300CE4FAA /* SystemConfiguration.framework */; };
-		74E8D42A1BB8F27000CE4FAA /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E8D4291BB8F27000CE4FAA /* CoreTelephony.framework */; };
-		74E8D42C1BB8F27700CE4FAA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E8D42B1BB8F27700CE4FAA /* CoreLocation.framework */; };
-		74E8D42E1BB8F27F00CE4FAA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E8D42D1BB8F27F00CE4FAA /* UIKit.framework */; };
-		74E8D4301BB8F28600CE4FAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E8D42F1BB8F28600CE4FAA /* Foundation.framework */; };
-		74E8D4321BB8F28C00CE4FAA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E8D4311BB8F28C00CE4FAA /* CoreGraphics.framework */; };
 		74E8D4351BB9074A00CE4FAA /* PlaceAroundTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E8D4341BB9074A00CE4FAA /* PlaceAroundTableView.m */; };
 		74E8D4381BB90D2A00CE4FAA /* wateRedBlank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74E8D4361BB90D2A00CE4FAA /* wateRedBlank@2x.png */; };
 		74E8D4391BB90D2A00CE4FAA /* wateRedBlank@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74E8D4371BB90D2A00CE4FAA /* wateRedBlank@3x.png */; };
@@ -85,18 +73,6 @@
 		74E8D4101BB8F1B800CE4FAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74E8D4131BB8F1B800CE4FAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74E8D4151BB8F1B800CE4FAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		74E8D41B1BB8F1D100CE4FAA /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
-		74E8D41C1BB8F1D100CE4FAA /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapSearchKit.framework; sourceTree = "<group>"; };
-		74E8D41F1BB8F1F100CE4FAA /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AMap.bundle; path = MAMapKit.framework/Versions/2.6.1.2c71e1d.110993/Resources/AMap.bundle; sourceTree = "<group>"; };
-		74E8D4211BB8F24700CE4FAA /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
-		74E8D4231BB8F24E00CE4FAA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		74E8D4251BB8F25B00CE4FAA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		74E8D4271BB8F26300CE4FAA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		74E8D4291BB8F27000CE4FAA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		74E8D42B1BB8F27700CE4FAA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		74E8D42D1BB8F27F00CE4FAA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		74E8D42F1BB8F28600CE4FAA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		74E8D4311BB8F28C00CE4FAA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		74E8D4331BB9074A00CE4FAA /* PlaceAroundTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceAroundTableView.h; sourceTree = "<group>"; };
 		74E8D4341BB9074A00CE4FAA /* PlaceAroundTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceAroundTableView.m; sourceTree = "<group>"; };
 		74E8D4361BB90D2A00CE4FAA /* wateRedBlank@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wateRedBlank@2x.png"; sourceTree = "<group>"; };
@@ -130,17 +106,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74E8D4321BB8F28C00CE4FAA /* CoreGraphics.framework in Frameworks */,
-				74E8D4301BB8F28600CE4FAA /* Foundation.framework in Frameworks */,
-				74E8D42E1BB8F27F00CE4FAA /* UIKit.framework in Frameworks */,
-				74E8D42C1BB8F27700CE4FAA /* CoreLocation.framework in Frameworks */,
-				74E8D42A1BB8F27000CE4FAA /* CoreTelephony.framework in Frameworks */,
-				74E8D4281BB8F26300CE4FAA /* SystemConfiguration.framework in Frameworks */,
-				74E8D4261BB8F25B00CE4FAA /* QuartzCore.framework in Frameworks */,
-				74E8D4241BB8F24E00CE4FAA /* libz.tbd in Frameworks */,
-				74E8D4221BB8F24700CE4FAA /* libstdc++.6.0.9.tbd in Frameworks */,
-				74E8D41E1BB8F1D100CE4FAA /* AMapSearchKit.framework in Frameworks */,
-				74E8D41D1BB8F1D100CE4FAA /* MAMapKit.framework in Frameworks */,
 				6BC004EB08EC8BB63DC19941 /* libPods-AMapPlaceChooseDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,18 +197,6 @@
 				74FC348F1BC7696200E49666 /* gpsnormal@3x.png */,
 				74FC34901BC7696200E49666 /* gpssearchbutton@2x.png */,
 				74FC34911BC7696200E49666 /* gpssearchbutton@3x.png */,
-				74E8D4311BB8F28C00CE4FAA /* CoreGraphics.framework */,
-				74E8D42F1BB8F28600CE4FAA /* Foundation.framework */,
-				74E8D42D1BB8F27F00CE4FAA /* UIKit.framework */,
-				74E8D42B1BB8F27700CE4FAA /* CoreLocation.framework */,
-				74E8D4291BB8F27000CE4FAA /* CoreTelephony.framework */,
-				74E8D4271BB8F26300CE4FAA /* SystemConfiguration.framework */,
-				74E8D4251BB8F25B00CE4FAA /* QuartzCore.framework */,
-				74E8D4231BB8F24E00CE4FAA /* libz.tbd */,
-				74E8D4211BB8F24700CE4FAA /* libstdc++.6.0.9.tbd */,
-				74E8D41B1BB8F1D100CE4FAA /* MAMapKit.framework */,
-				74E8D41C1BB8F1D100CE4FAA /* AMapSearchKit.framework */,
-				74E8D41F1BB8F1F100CE4FAA /* AMap.bundle */,
 				74E8D4051BB8F1B800CE4FAA /* main.m */,
 			);
 			name = "Supporting Files";
@@ -350,6 +303,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -399,7 +353,6 @@
 				74FC34941BC7696200E49666 /* gpssearchbutton@2x.png in Resources */,
 				74FC34951BC7696200E49666 /* gpssearchbutton@3x.png in Resources */,
 				74E8D4391BB90D2A00CE4FAA /* wateRedBlank@3x.png in Resources */,
-				74E8D4201BB8F1F100CE4FAA /* AMap.bundle in Resources */,
 				74FC34921BC7696200E49666 /* gpsnormal@2x.png in Resources */,
 				74FC34931BC7696200E49666 /* gpsnormal@3x.png in Resources */,
 				74E8D40F1BB8F1B800CE4FAA /* Main.storyboard in Resources */,
@@ -568,6 +521,8 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = YMJ372W38W;
 				INFOPLIST_FILE = "AMapPlaceChooseDemo-swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -579,7 +534,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(TARGET_NAME)/Swift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -593,18 +548,20 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = YMJ372W38W;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "AMapPlaceChooseDemo-swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.autonavi.AMapPlaceChooseDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "a892512d-fe94-4702-b716-0b66880b936d";
-				PROVISIONING_PROFILE_SPECIFIER = openPlatformInhouse;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(TARGET_NAME)/Swift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -732,6 +689,8 @@
 			baseConfigurationReference = 6CDF1CC4D82E19A0CD0FDEAD /* Pods-AMapPlaceChooseDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = YMJ372W38W;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -753,8 +712,10 @@
 			baseConfigurationReference = C48BB59B6AE4B287CF636532 /* Pods-AMapPlaceChooseDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = YMJ372W38W;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -766,7 +727,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.autonavi.AMapPlaceChooseDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "a892512d-fe94-4702-b716-0b66880b936d";
-				PROVISIONING_PROFILE_SPECIFIER = openPlatformInhouse;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

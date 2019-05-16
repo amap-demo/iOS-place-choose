@@ -71,7 +71,7 @@ class PlaceAroundTableView: UIView, UITableViewDataSource, UITableViewDelegate, 
         self.tableView.tableFooterView = footer
     }
     
-    func actionMoreButtonTapped() {
+    @objc func actionMoreButtonTapped() {
         if isFromMoreButton || self.delegate == nil {
             return
         }

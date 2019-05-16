@@ -126,7 +126,7 @@ class ViewController: UIViewController, MAMapViewDelegate, PlaceAroundTableViewD
         self.centerAnnotationAnimimate()
     }
     
-    func actionLocation() {
+    @objc func actionLocation() {
         if self.mapView.userTrackingMode == .follow {
             self.mapView.setUserTrackingMode(.none, animated: true)
         }
@@ -140,7 +140,7 @@ class ViewController: UIViewController, MAMapViewDelegate, PlaceAroundTableViewD
         }
     }
     
-    func actionTypeChanged(_ sender: UISegmentedControl) {
+    @objc func actionTypeChanged(_ sender: UISegmentedControl) {
         self.currentType = self.searchTypes[sender.selectedSegmentIndex]
         self.actionSearchAround(at: self.mapView.centerCoordinate)
     }
@@ -201,6 +201,10 @@ class ViewController: UIViewController, MAMapViewDelegate, PlaceAroundTableViewD
     }
     
     //MARK: - MAMapViewDelegate
+    
+    func mapViewRequireLocationAuth(_ locationManager: CLLocationManager!) {
+        locationManager.requestAlwaysAuthorization()
+    }
     
     func mapView(_ mapView: MAMapView!, didChange mode: MAUserTrackingMode, animated: Bool) {
         if mode == .none {
